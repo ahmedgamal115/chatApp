@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.container img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+.container p{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+.container span{
+    color: rgb(249 159 41);
+}

@@ -1,0 +1,55 @@
+.container{
+    width: 100%;
+    height: calc(100vh - 280px) ;
+    overflow: auto;
+}
+.content{
+    width: calc(100% - 40px) ;
+    margin: 10px 20px;
+    position: relative;
+}
+.transemit{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+.resived{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.transemit .avater{
+    display: flex;
+    justify-content: flex-end;
+    width: 5%;
+}
+.resived .avater{
+    width: 5%;
+}
+.avater img{
+    width: 40px;
+    height: 40px;
+}
+.message{
+    max-width: 40%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgb(218, 218, 218);
+    overflow-wrap: break-word;
+    background-color: rgb(52, 106, 106);
+}
+.transemit .message{
+    border-radius: 10px 0px 10px 10px;
+}
+.resived .message{
+    border-radius: 0px 10px 10px 10px;
+}
+@media screen and (min-width:600px) and (max-width:1080px) {
+    .transemit .avater{
+        width: 10%;
+    }
+    .resived .avater{
+        width: 10%;
+    }
+}
